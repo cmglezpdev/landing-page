@@ -1,0 +1,20 @@
+
+
+.home {
+    background-image: url('../../../public/home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    min-height: 500px;
+    min-width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    &-waves {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
