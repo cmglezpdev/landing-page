@@ -5,9 +5,9 @@
     --state-menu: translate(-100%);
 
     z-index: 100;
-    width: 100%;
+    width: 100vw;
     background-color: rgba(0, 0, 0, 0.8);
-
+    top: 0;
     position: fixed;
     display: grid;
     margin: 0 auto;
@@ -102,18 +102,17 @@
 
 
 
-@media (min-width:640px) {
-    .nav {
-        max-width: 640px;
-    }
-}
+// @media (min-width:640px) {
+//     .nav {
+//         max-width: 640px;
+//     }
+// }
 
 
 @media (min-width:768px) {
     .nav {
         --state-hamburguer: scale(0);
         --state-menu: translate(0);
-        max-width: 768px;
         backdrop-filter: blur(10px);
 
         &:target {
@@ -155,8 +154,6 @@
 @media (min-width:1024px) {
 
     .nav {
-        max-width: 1024px;
-
         &__link {
             font-size: 1.3rem;
         }
@@ -174,14 +171,14 @@
 
 
 
-@media (min-width: 1280px) {
-    .nav {
-        max-width: 1280px;
-    }
-}
+// @media (min-width: 1280px) {
+//     .nav {
+//         max-width: 1280px;
+//     }
+// }
 
-@media (min-width: 1536px) {
-    .nav {
-        max-width: 1536px;
-    }
-}
+// @media (min-width: 1536px) {
+//     .nav {
+//         max-width: 1536px;
+//     }
+// }
