@@ -1,5 +1,4 @@
 import { render, screen } from "@testing-library/react";
-import { prettyDOM } from "@testing-library/react";
 
 import { Card } from "../../../components/card/Card";
 
@@ -32,7 +31,7 @@ describe("Tests about Card Component", () =>{
         expect(benefits[1]).toHaveTextContent('Benefits 2');
         expect(benefits[2]).toHaveTextContent('Benefits 3');
 
-
+        screen.getByRole('button');
 
         rerender(
             <Card
