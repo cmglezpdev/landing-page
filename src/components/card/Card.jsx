@@ -2,13 +2,14 @@
 import './card.scss';
 
 import { BsCheck } from 'react-icons/bs';
+import { resoursePathInProduction } from '../../helpers/path-resources';
 // import { AiOutlineClose } from 'react-icons/ai';
 
 
 export const Card = () => {
   return (
     <section className='card'>
-        <img src="/img4.jpg" alt="" />
+        <img src={resoursePathInProduction('/img4.jpg')} alt="" />
 
         <h3 className='card__title'>Basico</h3>
         <span className='card__price'>5.000 <span>€/mes</span></span>

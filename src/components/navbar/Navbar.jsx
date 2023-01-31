@@ -1,4 +1,5 @@
 import { IoCarSportSharp } from 'react-icons/io5';
+import { resoursePathInProduction } from '../../helpers/path-resources';
 
 import './navbar.scss';
 
@@ -28,12 +29,12 @@ export const Navbar = () => {
       </ul>
 
       <a href="#nav" className="nav__hamburguer">
-          <img src='/menu.svg' className="nav__icon" alt='open' />
+          <img src={resoursePathInProduction('/menu.svg')} className="nav__icon" alt='open' />
       </a>
       
       <a href="#other" className="nav__close">
 
-          <img src='/close.svg' className="nav__icon" alt='close' />
+          <img src={resoursePathInProduction('/close.svg')} className="nav__icon" alt='close' />
       </a>
     </nav>  
   )
