@@ -11,3 +11,8 @@ yarn install
 ```bash
 yarn start
 ```
+
+3. You can run test
+```bash
+yarn test
+```
