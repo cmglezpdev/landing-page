@@ -14,8 +14,8 @@ export const Card = ({ img, name, price, time = 'mes', benefits, limitations = [
         <span className='card__price'>{ price } <span>€/{ time }</span></span>
         <ul className='card__benefits'>
             {
-              benefits.map(b => (
-                <li className='benefits-item'>
+              benefits.map((b, i) => (
+                <li className='benefits-item benefit' key={i}>
                     <BsCheck className='item-icon' />
                     <span className='item--text'>{ b }</span>
                 </li>
@@ -23,8 +23,8 @@ export const Card = ({ img, name, price, time = 'mes', benefits, limitations = [
               ))
             }
             {
-              limitations.map(b => (
-                <li className='benefits-item'>
+              limitations.map((b, i) => (
+                <li className='benefits-item limitation' key={i}>
                     <AiOutlineClose className='item-icon' />
                     <span className='item--text'>{ b }</span>
                 </li>
