@@ -1,0 +1,47 @@
+.card-car {
+    width: 230px;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    > img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    &-name {
+        text-align: center;
+        font-size: 22px;
+        font-weight: 700;
+        margin: 10px 0;
+    }
+
+    &-info {
+        text-align: center;
+        font-size: 15px;
+        font-weight: 100;
+    }
+    
+    &-see {
+        display: block;
+        margin: 20px auto;
+        font-size: 17px;
+        padding: 10px 25px;
+        border: 0;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: 600;
+        background-color: rgb(39, 184, 39);
+        transition: background-color .05s ease-in;
+        
+        &:hover {
+            background-color: rgb(42, 128, 42);
+        } 
+    }
+}
