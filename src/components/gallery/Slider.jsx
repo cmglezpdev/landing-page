@@ -21,10 +21,10 @@ export const CarsSlider = () => {
             <div>
                 <Slider {...settings}>
                     {
-                        new Array(8).fill(0).map((_, index) => (
+                        new Array(7).fill(0).map((_, index) => (
                             <div className='slider-item' key={index}>
                                 <img
-                                    src={`/assets/slider/car${index + 1}.jpg`} alt="car"
+                                    src={`/assets/slider/car${index}.jpg`} alt="car"
                                     className='slider-item__img'
                                 />
                             </div>
