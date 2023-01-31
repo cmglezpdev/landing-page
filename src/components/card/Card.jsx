@@ -11,7 +11,7 @@ export const Card = () => {
         <img src="/img4.jpg" alt="" />
 
         <h3 className='card__title'>Basico</h3>
-
+        <span className='card__price'>5.000 <span>€/mes</span></span>
         <ul className='card__benefits'>
             <li className='benefits-item'>
                 <BsCheck className='item-icon' />
@@ -22,6 +22,10 @@ export const Card = () => {
                 <span className='item--text'>Una vez el año el arreglo es gratis</span>
             </li>
         </ul>
+
+        <button className='card__buy_btn'>
+          Adquirir
+        </button>
     </section>
   )
 }

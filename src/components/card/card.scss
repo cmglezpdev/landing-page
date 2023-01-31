@@ -2,7 +2,7 @@
 
 .card {
     background-color: rgb(49, 49, 49);
-    width: 250px;
+    width: 300px;
     padding: 10px;
     border-radius: 10px;
     color: rgb(204, 202, 202);
@@ -20,6 +20,18 @@
         margin: 10px 0;
     }
 
+    &__price {
+        display: block;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 800;
+        
+        > span {
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
+
     &__benefits {
         list-style: none;
     
@@ -33,5 +45,23 @@
                 color: #0f0;
             }
         }
+    }
+
+    &__buy_btn {
+        display: block;
+        margin-top: 20px;
+        padding: 10px 60px;
+        margin: 20px auto;
+        border-radius: 15px;
+        border: 2px solid rgb(42, 148, 42);
+        background-color: rgb(42, 128, 42);
+        color: #ccc;
+        font-size: 17px;
+        font-weight: 900;
+        transition: background-color .150s ease-in;
+
+        &:hover {
+            background-color: rgb(39, 184, 39);
+        } 
     }
 }
