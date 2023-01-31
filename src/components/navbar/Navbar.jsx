@@ -1,3 +1,5 @@
+import { IoCarSportSharp } from 'react-icons/io5';
+
 import './navbar.scss';
 
 export const Navbar = () => {
@@ -6,28 +8,22 @@ export const Navbar = () => {
 
     <nav className="nav">
       <div className="nav__logo">
+          <IoCarSportSharp className='icon' />
           <span>Cars</span>
       </div>
       
       <ul className='nav__links'>
           <li className="nav__item">
-              <a href="#app" className='nav__link'>Home</a>
-              <div className="underline"></div>
+              <a href="#app" className='nav__link'>Inicio</a>
           </li>
           <li className="nav__item">
-              <a href="#about" className='nav__link'>About</a>
-              <div className="underline"></div>
+              <a href="#gallery" className='nav__link'>Galería</a>
           </li>
           <li className="nav__item">
-              <a href="#skills" className='nav__link'>Skills</a>
+              <a href="#services" className='nav__link'>Servicios</a>
           </li>
           <li className="nav__item">
-              <a href="#works" className='nav__link'>Works</a>
-              <div className="underline"></div>
-          </li>
-          <li className="nav__item">
-              <a href="#contact" className='nav__link'>Contact</a>
-              <div className="underline"></div>
+              <a href="#contact" className='nav__link'>Contacto</a>
           </li>
       </ul>
 

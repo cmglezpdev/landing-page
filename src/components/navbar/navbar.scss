@@ -29,11 +29,17 @@
 
     &__logo {
         z-index: 102;
+        display: flex;
+        align-items: center;
+        color: rgb(231, 44, 44);
+        font-size: 2.2em;
+        
+        .icon {
+            color: rgb(231, 44, 44);
+        }
 
         span {
-            font-size: 2.2em;
             font-weight: bold;
-            color: #f00;
             padding: 10px;
         }
     }
@@ -101,14 +107,6 @@
 }
 
 
-
-// @media (min-width:640px) {
-//     .nav {
-//         max-width: 640px;
-//     }
-// }
-
-
 @media (min-width:768px) {
     .nav {
         --state-hamburguer: scale(0);
@@ -141,44 +139,12 @@
         }
 
         &__logo {
+            font-size: 2em;
 
             span {
-                font-size: 2em;
                 padding: 6px;
             }
         }
     }
 
 }
-
-@media (min-width:1024px) {
-
-    .nav {
-        &__link {
-            font-size: 1.3rem;
-        }
-
-        &__logo {
-
-            span {
-                font-size: 2.8em;
-                padding: 10px;
-            }
-
-        }
-    }
-}
-
-
-
-// @media (min-width: 1280px) {
-//     .nav {
-//         max-width: 1280px;
-//     }
-// }
-
-// @media (min-width: 1536px) {
-//     .nav {
-//         max-width: 1536px;
-//     }
-// }
