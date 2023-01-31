@@ -4,10 +4,10 @@
     --state-hamburguer: scale(1);
     --state-menu: translate(-100%);
 
-    z-index: 100;
-    width: 100vw;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     top: 0;
+    z-index: 100;
     position: fixed;
     display: grid;
     margin: 0 auto;
