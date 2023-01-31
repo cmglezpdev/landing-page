@@ -6,7 +6,7 @@ export const Navbar = () => {
 
   return (
 
-    <nav className="nav">
+    <nav className="nav" id='nav'>
       <div className="nav__logo">
           <IoCarSportSharp className='icon' />
           <span>Cars</span>
