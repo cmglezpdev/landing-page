@@ -7,7 +7,9 @@ export const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer__info">
-                <IoCarSportSharp className="info__logo" />
+                <a href="#home">
+                    <IoCarSportSharp className="info__logo" />
+                </a>
 
                 <div className='info__legal'>
                     <span className='terms'>Termino y Condiciones</span>

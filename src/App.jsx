@@ -1,4 +1,4 @@
-import { Footer, Gallery, Home, Navbar, Services } from "./components";
+import { Contact, Footer, Gallery, Home, Navbar, Services } from "./components";
 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -8,8 +8,11 @@ function App() {
     <main className="App">
       <Navbar />
       <Home />
-      <Gallery />
-      <Services />
+        <div className="container">
+          <Gallery />
+          <Services />
+          <Contact />
+        </div>
       <Footer />
     </main>
   );

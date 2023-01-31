@@ -13,6 +13,10 @@ export const Gallery = () => {
                 <CarsSlider />
             </div>
 
+            <p className='gallery__info'>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit vero provident labore atque ea explicabo amet illo exercitationem, velit officia illum quis blanditiis repudiandae voluptatem praesentium ipsum vitae ut soluta.
+            </p>
+
             <div className='cars-gallery'>
                 <CardCar 
                     img='assets/gallery/ferrari.jpg'

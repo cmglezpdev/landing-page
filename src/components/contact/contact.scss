@@ -1,0 +1,87 @@
+@use '../../styles/mixins.scss' as *;
+
+.contact {
+    padding: 60px 20px 0;
+
+    &__title {
+        @include title;
+        margin-top: 30px;
+    }
+
+    &__data {
+
+        &-text {
+            @include description;
+
+            > a {
+                text-decoration: none;
+                color: rgb(7, 187, 7);
+
+                &:hover {
+                    color: rgb(6, 247, 6);
+                }
+            }
+        }
+    
+        &-inputs {
+            margin: auto;
+            min-width: 300px;
+            width: 300px;
+        
+            > div {
+                margin: 15px 0;
+                width: 100%;
+
+                > label {
+                    display: block;
+                    margin: 5px;
+                    color: rgb(80, 77, 77);
+                    font-weight: 600;
+                }
+
+                > textarea {
+                    resize: vertical;
+                    height: 170px;
+                }
+                
+                > input, > textarea {
+                    border-radius: 5px;                    
+                    width: 100%;
+                    padding: 10px;
+                    font-size: 18px;
+                    border: 2px solid gray;
+                    
+                    &:focus {
+                        border: 2px solid green;
+                        outline: none;
+                    }
+                };
+            }
+        }
+    
+    }
+}
+
+
+
+@media (min-width: 800px) {
+    .contact {
+
+        padding: 30 40px;
+
+        &__data {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+
+            &-text {
+                margin-top: 30px;
+                width: 50%;
+            }
+
+            &-inputs {
+                width: 50%;
+            }
+        }
+    }
+}

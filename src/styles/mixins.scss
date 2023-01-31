@@ -6,3 +6,10 @@
     font-weight: 700;
     margin: 0 0 50px;
 }
+
+@mixin description {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 50px 20px;
+}
+

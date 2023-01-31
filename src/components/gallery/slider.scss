@@ -9,13 +9,12 @@
     > div {
         height: 100%;
         width: 100%;
-        padding: 10px;
+        padding: 10px 10px 30px;
         background-color: rgb(241, 241, 241);
         max-width: 800px;
         
         .slider {
             width: 100%;
-            overflow: hidden;
             
             .slider-item {
                 &__img {
@@ -24,8 +23,14 @@
                 }
             }
             
-            .slick-arrow.slick-prev, .slick-arrow.slick-next {
-                display: none !important;
+            .slick-arrow.slick-prev {
+                left: 7px !important;
+                z-index: 2 !important;
+            }
+            
+            .slick-arrow.slick-next {
+                right: 7px !important;
+                z-index: 2 !important;
             }
         }
         

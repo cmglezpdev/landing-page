@@ -3,19 +3,26 @@
 
 .gallery {
 
-    padding-bottom: 30px;
+    padding-bottom: 100px;
+    border-bottom: 3px solid #000;
 
     &__title {
         @include title;
     }
 
+    &__info {
+        @include description;
+        margin: 100px 40px 60px;
+        text-align: center;
+    }
+
     .cars-gallery {
-        
+        margin: auto;
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
         justify-content: center;
-    
+        max-width: 1200px;
     }
 }
 

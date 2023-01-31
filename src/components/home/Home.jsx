@@ -4,13 +4,15 @@ import './home.scss';
 
 export const Home = () => {
   return (
-    <header className='home container' id='home'>
+    <header className='home' id='home'>
         
         <div className='home__content'>
           <p className='content-intro'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis atque ipsum, quisquam accusantium voluptas placeat in quas maiores error cum ipsam explicabo dicta laborum. Reiciendis nam sunt optio totam quibusdam?</p>
-          <button className='content-btn'>
-            Started
-          </button>
+          <a href="#gallery">
+            <button className='content-btn'>
+              Galería de coches
+            </button>
+          </a>
         </div>
 
         <div className='home-waves'>
