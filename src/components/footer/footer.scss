@@ -1,0 +1,42 @@
+
+
+.footer {
+    width: 100%;
+    padding: 20px; 
+    background-color: gray;
+    margin-top: 50px;
+    
+    &__info {
+        margin: auto;
+        max-width: 500px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        .info__logo {   
+            font-size: 25px;
+            transition: all .1s ease-in-out;
+            cursor: pointer;
+        }
+    
+        .info__legal {
+            text-align: center;
+            
+            > span {
+                transition: all .1s ease-in-out;
+                cursor: pointer;
+            }
+        }
+    
+        .info__sn {
+            display: flex;
+            
+            .sn-icon {
+                font-size: 30px;
+                margin: 0 5px;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
