@@ -47,21 +47,25 @@
         }
     }
 
-    &__buy_btn {
-        display: block;
-        margin-top: 20px;
-        padding: 10px 60px;
-        margin: 20px auto;
-        border-radius: 15px;
-        border: 2px solid rgb(42, 148, 42);
-        background-color: rgb(42, 128, 42);
-        color: #ccc;
-        font-size: 17px;
-        font-weight: 900;
-        transition: background-color .150s ease-in;
+    > a {
+        text-decoration: none;
 
-        &:hover {
-            background-color: rgb(39, 184, 39);
-        } 
+        .card__buy_btn {
+            display: block;
+            margin-top: 20px;
+            padding: 10px 60px;
+            margin: 20px auto;
+            border-radius: 15px;
+            border: 2px solid rgb(42, 148, 42);
+            background-color: rgb(42, 128, 42);
+            color: #ccc;
+            font-size: 17px;
+            font-weight: 900;
+            transition: background-color .150s ease-in;
+    
+            &:hover {
+                background-color: rgb(39, 184, 39);
+            } 
+        }
     }
 }

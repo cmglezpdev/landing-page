@@ -1,31 +1,55 @@
-
-import './card.scss';
+import ReactPropTypes from 'prop-types';
 
 import { BsCheck } from 'react-icons/bs';
-// import { AiOutlineClose } from 'react-icons/ai';
+import { AiOutlineClose } from 'react-icons/ai';
+import './card.scss';
 
 
-export const Card = () => {
+export const Card = ({ img, name, price, time = 'mes', benefits, limitations = [], linkGetPlan }) => {
   return (
     <section className='card'>
-        <img src="/img4.jpg" alt="" />
+        <img src={img} alt="" />
 
-        <h3 className='card__title'>Basico</h3>
-        <span className='card__price'>5.000 <span>€/mes</span></span>
+        <h3 className='card__title'>{ name }</h3>
+        <span className='card__price'>{ price } <span>€/{ time }</span></span>
         <ul className='card__benefits'>
-            <li className='benefits-item'>
-                <BsCheck className='item-icon' />
-                <span className='item--text'>Descuento del 10% en las reparaciones del coche</span>
-            </li>
-            <li className='benefits-item'>
-                <BsCheck className='item-icon' />
-                <span className='item--text'>Una vez el año el arreglo es gratis</span>
-            </li>
-        </ul>
+            {
+              benefits.map(b => (
+                <li className='benefits-item'>
+                    <BsCheck className='item-icon' />
+                    <span className='item--text'>{ b }</span>
+                </li>
 
-        <button className='card__buy_btn'>
-          Adquirir
-        </button>
+              ))
+            }
+            {
+              limitations.map(b => (
+                <li className='benefits-item'>
+                    <AiOutlineClose className='item-icon' />
+                    <span className='item--text'>{ b }</span>
+                </li>
+
+              ))
+            }
+
+
+        </ul>
+          
+        <a href={linkGetPlan}>
+          <button className='card__buy_btn'>
+            Adquirir
+          </button>
+        </a>
     </section>
   )
+}
+
+Card.propTypes = {
+  img: ReactPropTypes.string.isRequired,
+  name: ReactPropTypes.string.isRequired,
+  price: ReactPropTypes.string.isRequired,
+  time: ReactPropTypes.string,
+  benefits: ReactPropTypes.arrayOf(ReactPropTypes.string).isRequired,
+  limitations: ReactPropTypes.arrayOf(ReactPropTypes.string),
+  linkGetPlan: ReactPropTypes.string.isRequired,
 }
