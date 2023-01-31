@@ -1,15 +1,11 @@
-
+@use '../../styles/mixins.scss' as *;
 
 .services {
-
-    padding: 0 20px;
-
+    padding: 30px 0;
+    background-color: rgba($color: #8f8e8e, $alpha: .3);
 
     &__title {
-        text-align: center;
-        font-size: 60px;
-        font-weight: 700;
-        margin: 0 0 50px;
+        @include title;
     }
 
     .text {
@@ -22,7 +18,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 30px;
+        gap: 80px;
     }
 }
 
