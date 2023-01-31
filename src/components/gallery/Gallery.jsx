@@ -92,6 +92,19 @@ export const Gallery = () => {
                     name='Mazda'
                     info='Mazda es una marca de automóviles de lujo japonesa, perteneciente al grupo Mazda. La compañía fue fundada en 1920 por Jujiro Matsuda, quien también diseñó el primer modelo de la marca.'
                 />
+
+                <CardCar
+                    img='assets/gallery/honda.jpg'
+                    name='Honda'
+                    info='Honda es una marca de automóviles de lujo japonesa, perteneciente al grupo Honda. La compañía fue fundada en 1948 por Soichiro Honda, quien también diseñó el primer modelo de la marca.'
+                />
+
+                <CardCar
+                    img='assets/gallery/lexus.jpg'  
+                    name='Lexus'
+                    info='Lexus es una marca de automóviles de lujo japonesa, perteneciente al grupo Toyota. La compañía fue fundada en 1989 por Eiji Toyoda, quien también diseñó el primer modelo de la marca.'
+                />
+
             </div>
 
 
