@@ -14,7 +14,7 @@ export const Navbar = () => {
       
       <ul className='nav__links'>
           <li className="nav__item">
-              <a href="#app" className='nav__link'>Inicio</a>
+              <a href="#home" className='nav__link'>Inicio</a>
           </li>
           <li className="nav__item">
               <a href="#gallery" className='nav__link'>Galería</a>

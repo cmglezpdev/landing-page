@@ -6,7 +6,7 @@ import './gallery.scss';
 export const Gallery = () => {
     return (
 
-        <section className='gallery'>
+        <section className='gallery' id='gallery'>
             <h2 className='gallery__title'>Que tenemos para ti?</h2>
 
             <div className='gallery-slider'>
