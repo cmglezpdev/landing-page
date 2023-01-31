@@ -1,0 +1,28 @@
+
+
+.services {
+
+    padding: 0 20px;
+
+
+    &__title {
+        text-align: center;
+        font-size: 60px;
+        font-weight: 700;
+        margin: 0 0 50px;
+    }
+
+    .text {
+        font-size: 20px;
+        font-weight: 400;
+        margin: 0 0 50px 20px;
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
