@@ -1,0 +1,21 @@
+@use '../../styles/mixins' as *;
+
+
+.gallery {
+
+    padding-bottom: 30px;
+
+    &__title {
+        @include title;
+    }
+
+    .cars-gallery {
+        
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    
+    }
+}
+
