@@ -27,6 +27,14 @@ export const Contact = () => {
             <label htmlFor="text">Mensage</label>
             <textarea name="text" id="text" placeholder='Write your message here'></textarea>
           </div>
+
+          <button 
+            type='submit' 
+            className='btn-send'
+            onClick={(e) => {e.preventDefault()}}
+          >
+            Enviar
+          </button>
         </form>
       </div>
     </section>
