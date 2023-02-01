@@ -6,8 +6,12 @@
     padding: 10px;
     border-radius: 10px;
     color: rgb(204, 202, 202);
-
-    > img {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    &__img {
         width: 100%;
         border-radius: 10px;
         object-fit: cover;
@@ -25,6 +29,7 @@
         text-align: center;
         font-size: 25px;
         font-weight: 800;
+        margin-bottom: 30px;
         
         > span {
             font-size: 20px;
@@ -47,7 +52,7 @@
         }
     }
 
-    > a {
+    .card__btn-link {
         text-decoration: none;
 
         .card__buy_btn {

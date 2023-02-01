@@ -8,34 +8,35 @@ import './card.scss';
 export const Card = ({ img, name, price, time = 'mes', benefits, limitations = [], linkGetPlan }) => {
   return (
     <section className='card'>
-        <img src={img} alt="" />
+        <div>
+          <img src={img} className='card__img' alt="" />
 
-        <h3 className='card__title'>{ name }</h3>
-        <span className='card__price'>{ price } <span>€/{ time }</span></span>
-        <ul className='card__benefits'>
-            {
-              benefits.map((b, i) => (
-                <li className='benefits-item benefit' key={i}>
-                    <BsCheck className='item-icon' />
-                    <span className='item--text'>{ b }</span>
-                </li>
+          <h3 className='card__title'>{ name }</h3>
+          <span className='card__price'>{ price } <span>€/{ time }</span></span>
+          <ul className='card__benefits'>
+              {
+                benefits.map((b, i) => (
+                  <li className='benefits-item benefit' key={i}>
+                      <BsCheck className='item-icon' />
+                      <span className='item--text'>{ b }</span>
+                  </li>
 
-              ))
-            }
-            {
-              limitations.map((b, i) => (
-                <li className='benefits-item limitation' key={i}>
-                    <AiOutlineClose className='item-icon' />
-                    <span className='item--text'>{ b }</span>
-                </li>
+                ))
+              }
+              {
+                limitations.map((b, i) => (
+                  <li className='benefits-item limitation' key={i}>
+                      <AiOutlineClose className='item-icon' />
+                      <span className='item--text'>{ b }</span>
+                  </li>
 
-              ))
-            }
+                ))
+              }
+          </ul>
+            
 
-
-        </ul>
-          
-        <a href={linkGetPlan}>
+        </div>
+        <a href={linkGetPlan} className='card__btn-link'>
           <button className='card__buy_btn'>
             Adquirir
           </button>
